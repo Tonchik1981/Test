@@ -1216,7 +1216,7 @@ $dripBot = (function($, oldDripBot, isPro) {
 	var checkVersion = new IntervalMod(function() { getVersion(); }, 60000);
 	var CPSTick = new IntervalMod(tickCPS, 1000, true);
 
-	var clicker = new TimeoutMod(smartChainClick, 100, true);
+	var clicker = new TimeoutMod(smartChainClick, 55, true);
 	clickCountDivisor = clicksLeft.obj;
 
 	var versionUpdate = new TimeoutMod(
