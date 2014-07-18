@@ -1211,12 +1211,12 @@ $dripBot = (function($, oldDripBot, isPro) {
 		refreshJvms
 	);
 
-	var gameLoop = new IntervalMod(function() {}, 500, true);
+	var gameLoop = new IntervalMod(function() {}, 55, true);
 	var errorCheck = new IntervalMod(function() { checkForError(); }, 2000);
 	var checkVersion = new IntervalMod(function() { getVersion(); }, 60000);
 	var CPSTick = new IntervalMod(tickCPS, 1000, true);
 
-	var clicker = new TimeoutMod(smartChainClick, 55, true);
+	var clicker = new TimeoutMod(smartChainClick, 5, true);
 	clickCountDivisor = clicksLeft.obj;
 
 	var versionUpdate = new TimeoutMod(
