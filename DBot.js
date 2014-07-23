@@ -857,7 +857,7 @@ $dripBot = (function($, oldDripBot, isPro) {
 			return;
 		}
 
-		if(stage3counter < 60 * 2) {
+		if(stage3counter < 59 * 1) {
 			stage3counter++;
 			return;
 		} else {
