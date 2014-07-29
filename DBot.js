@@ -513,8 +513,9 @@ $dripBot = (function($, oldDripBot, isPro) {
 			if(isDripBotPro) {
 				location.reload();
 			} else {
-				errorAlerted = true;
-				alert("DripBot has detected that the game errored (way to go, dripstat).  Please refresh your browser and re-run DripBot.");
+				errorAlerted = false;
+//				alert("DripBot has detected that the game errored (way to go, dripstat).  Please refresh your browser and re-run DripBot.");
+				location.reload();
 			}
 		}
 	}
